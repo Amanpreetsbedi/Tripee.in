@@ -1,0 +1,438 @@
+
+
+/* Ace Responsive Menu
+----------------------------------------*/
+a {
+    color: #333;
+}
+
+.ace-responsive-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    float:left;
+    width:100%;
+    font-family: 'open-sans', sans-serif;
+}
+.ace-responsive-menu li{
+    list-style: none;
+	float:left;
+}
+.ace-responsive-menu li ul {
+    display:none;
+}
+.ace-responsive-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+	line-height:40px;
+    float: left;
+}
+.ace-responsive-menu li a {
+    color:#333;
+}
+
+.ace-responsive-menu li a:hover {
+    color:#f26522;
+}
+
+.ace-responsive-menu > li > a {
+    padding: 0px 20px 0px 20px;
+    color: #333;
+	transition:ease 0.2s all;
+}
+
+.ace-responsive-menu li.menu-active > a {
+    background: #fff;
+    color:#f26522;
+	transition:ease 0.2s all;
+}
+.ace-responsive-menu li .menu-active {
+    position: relative;
+}
+.ace-responsive-menu > li > a > .arrow:before {  
+    margin-left: 5px;
+	margin-right: 5px;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: " \276F";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+	transform: rotate(90deg);
+}
+
+.ace-responsive-menu li ul.sub-menu li > a > .arrow:before {
+    content: "\f105" !important;
+}
+.ace-responsive-menu > li > ul.sub-menu {
+    display: none;
+    list-style: none;
+    clear: both;
+    margin: 0;
+    position: absolute;
+    z-index: 999;
+}
+.ace-responsive-menu li ul.sub-menu {
+    background:#fff;
+	margin-top:40px;
+}
+.ace-responsive-menu li ul.sub-menu > li {
+    width:160px;
+	line-height:25px;
+	float:none;
+}
+.ace-responsive-menu li ul.sub-menu li a {
+	width:100%;
+    display: block;
+    margin: 0px 0px;
+    padding: 12px 20px 12px 15px;
+    text-decoration: none;
+    font-size: 17px;
+	transition:ease 0.2s all;
+	font-weight: normal;
+    background: #fff;
+}
+
+.ace-responsive-menu li ul.sub-menu li a:hover {
+	color:#f26522;
+	transition:ease 0.2s all;	
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li {
+    position: relative;
+}
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    left: 185px;
+    top: 0px;
+    display: none;
+    list-style: none;
+}
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    left: 185px;
+    top: 0px;
+    display: none;
+    list-style: none;
+}
+.ace-responsive-menu > li > ul.sub-menu li > a > .arrow:before {
+    float: right;
+    margin-top: 1px;
+    margin-right: 0px;
+    display: inline;
+    font-size: 16px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f104";
+    font-weight: 300;
+    text-shadow: none;
+}
+
+/* Menu Toggle Btn
+----------------------------------------*/
+.menu-toggle {
+    display: none;
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+.menu-toggle h3 {
+    float: left;
+    color: #FFF;
+    padding: 17px 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.menu-toggle .icon-bar {
+    display: block !important;
+    width: 30px;
+	float:none;
+    height: 3px;
+    background-color: #333 !important;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    margin: 5px;
+}
+
+.menu-toggle #menu-btn {
+    float: right;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hide-menu {
+    display: none;
+}
+
+
+/* Accordion Menu Styles
+----------------------------------------*/
+
+ul[data-menu-style="accordion"] {
+    width: 250px;
+}
+ul[data-menu-style="accordion"] > li {    
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    float: none !important;
+}
+ul[data-menu-style="accordion"] > li:first-child {
+    border-top: 2px solid #FD5025;
+}
+ul[data-menu-style="accordion"] li ul.sub-menu > li {
+    width: 100%;
+}
+ul[data-menu-style="accordion"] > li > a > .arrow:before {
+    float: right;
+    content: "\f105";
+}
+ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before {
+    content: "\f107" !important;
+}
+ul[data-menu-style="accordion"] > li > ul.sub-menu {
+    position: static;
+}
+ul[data-menu-style="accordion"] > li > a i {
+    padding-right: 10px;
+    color: #FF5737;
+}
+ul[data-menu-style="accordion"] > li > ul.sub-menu > li ul.sub-menu {
+    position: static;
+}
+ul[data-menu-style="accordion"] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+    position: static;
+}
+ul[data-menu-style="accordion"] > li {
+    border-bottom: 1px solid #242424;
+}
+ul[data-menu-style="accordion"] li a:hover {
+    background: #272727 !important;
+}
+ul[data-menu-style="accordion"] ul.sub-menu li.menu-active > a > .arrow:before {
+    content: "\f107" !important;
+}
+
+/* Vertical Menu Styles
+----------------------------------------*/
+
+ul[data-menu-style="vertical"] {
+    width: 200px;
+}
+ul[data-menu-style="vertical"] > li {
+    float: none;
+}
+ul[data-menu-style="vertical"] > li:first-child {
+    border-top: 2px solid #FD5025;
+}
+ul[data-menu-style="vertical"] li ul.sub-menu > li {
+    width: 100%;
+}
+ul[data-menu-style="vertical"] > li > a > .arrow:before {
+    float: right;
+    content: "\f105";
+}
+ul[data-menu-style="vertical"] > li.menu-active {
+    position:relative;
+}
+ul[data-menu-style="vertical"] > li > ul.sub-menu {
+    position: absolute;
+    left:200px;
+    top:0px;
+    width:200px;
+}
+ul[data-menu-style="vertical"] > li > a i {
+    padding-right: 10px;
+    color: #FF5737;
+}
+ul[data-menu-style="vertical"]> li > ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    width:200px;
+    left: 200px;
+}
+ul[data-menu-style="vertical"] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+    position: absolute;
+    width:200px;
+    left: 200px;
+}
+ul[data-menu-style="vertical"] > li {
+    border-bottom: 1px solid #242424;
+}
+ul[data-menu-style="vertical"] li a:hover {
+    background: #272727 !important;
+}
+
+/* Responsive Menu Styles
+----------------------------------------*/
+/*Note: change the max-width asper your requirment and change the same in aceResponsiveMenu({resizeWidth: "768" }) function*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .demo {
+		width:100%;
+    }
+	
+	.menu-toggle {
+        float: right;
+        width: 100%;
+    }
+	
+	.menu-toggle #menu-btn {
+        background: #fff;
+		border-radius: 5px;
+		border:none;
+		margin: 4% 0% 8%;
+    }
+	
+	#menu-btn{
+		background:#fff !important;
+	}
+	
+	.menu-toggle .icon-bar {
+		float:none;
+	}
+	
+	
+    ul[data-menu-style="vertical"] , ul[data-menu-style="accordion"],
+    ul[data-menu-style="vertical"] li ul.sub-menu {
+        width: 100% !important;
+    } 
+    .ace-responsive-menu {
+        float: right;
+        width:96%;
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.19);
+		margin:2%;
+		z-index:99999;
+		position:relative;
+    }
+
+	.ace-responsive-menu > li > a {
+		width:94%;
+        padding: 0% 3%;
+		color:#333;
+        font-size: 15px;
+	}
+    .ace-responsive-menu > li {
+        width:100%;
+		border-bottom: 1px solid #ddd;
+    }   
+	
+	.ace-responsive-menu li.menu-active > a {
+        background: #fff;
+        color:#333;
+    }
+	
+    .ace-responsive-menu li a:hover {
+        background: #fff;
+		color:#f26522;
+	    transition:ease 0.2s all;
+    }
+ 
+    .ace-responsive-menu > li > a i {
+        padding-right: 10px;
+        color: #FF5737;
+    }
+	
+	.ace-responsive-menu li ul.sub-menu li a {
+		width:93%;
+        padding: 12px 3%;
+		transition: all 0.3s ease;
+    }  
+}
+ 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.menu-toggle .icon-bar {
+       height: 3px;
+       margin: 6px;
+	   float: right;
+       width: 100%;
+    }
+
+	.menu-toggle #menu-btn {
+        background: #fff;
+		border-radius: 5px;
+		border:none;
+		margin: 4% 0% 8%;
+    }
+	
+	#menu-btn{
+		background:#fff !important;
+	}
+	
+	.menu-toggle .icon-bar {
+		float:none;
+	}
+	
+	.ace-responsive-menu {
+        float: right;
+        width:96%;
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.19);
+		margin:2%;
+		z-index:99999;
+		position:relative;
+    }
+
+	.ace-responsive-menu > li > a {
+		width:94%;
+        padding: 0% 3%;
+		color:#333;
+        font-size: 15px;
+	}
+    .ace-responsive-menu > li {
+        width:100%;
+		border-bottom: 1px solid #ddd;
+    }   
+	
+	.ace-responsive-menu li.menu-active > a {
+        background: #fff;
+        color:#333;
+    }
+	
+    .ace-responsive-menu li a:hover {
+        background: #fff;
+		color:#f26522;
+	    transition:ease 0.2s all;
+    }
+ 
+    .ace-responsive-menu > li > a i {
+        padding-right: 10px;
+        color: #FF5737;
+    }
+	
+	.ace-responsive-menu li ul.sub-menu li a {
+		width:93%;
+        padding: 12px 3%;
+		transition: all 0.3s ease;
+    } 
+	 
+	
+	 .ace-responsive-menu li ul.sub-menu > li {
+        float:left;
+    }
+	
+	.menu-toggle #menu-btn {
+        margin: 10% 0% 5%;
+		background: #fff;
+	}
+
+}
+
+
+
+
+
+
+
