@@ -1804,6 +1804,10 @@ samp{
     width: 46%;
 }
 
+.hotel_price p samp {
+    font-size: 11px;
+}
+	
 .ticket_box {
     width: 46%;
 }
