@@ -120,7 +120,7 @@ section{
 }
 
 .nav_bar{
-	width:70%;
+	width:65%;
 	float:right;
 	margin-top:4%;
 }
@@ -1098,7 +1098,7 @@ samp{
 	width:100%;
 	float:left;
 	font-weight:700;
-	font-size:150px;
+	font-size:70px;
 	color:#253771;
 	text-align:center;
 }
@@ -1326,13 +1326,12 @@ section{
 }
 
 .box_image img{
-    width: 80%;
-	margin-left:10%;
-	transform: scale(1.3,1.3);
+    width: 100%;
+	transform: scale(1,1);
 }
 
 .box_image img:hover{
-	transform: scale(1.3,1.3);
+	transform: scale(1,1);
 }
 
 .box h1{
@@ -1429,6 +1428,10 @@ samp{
 
 /*CSS FOR SERVICES PAGE*/
 
+.hotelimage img{
+	width:100%;
+	transform: scale(1,1);
+}
 
 .destination_price {
 	width: 40%;
@@ -1498,6 +1501,15 @@ samp{
 	width:100%;
 }
 
+.productsbox_image img{
+	width:100%;
+	transform: scale(1,1);
+}
+
+.productsbox_image img:hover{
+	transform: scale(1,1);
+}
+
 .productsbox_heading{
 	width:100%;
 }
@@ -1549,7 +1561,7 @@ samp{
 /*CSS FOR VIDEO DEMONSTRATION PAGE*/
 
 .videodemonstration h1{
-	font-size:70px;
+	font-size:35px;
 }
 
 .anchor p {
@@ -1715,6 +1727,15 @@ section{
     width: 38%;
 }
 
+.box_image img{
+    width: 100%;
+	transform: scale(1,1.04);
+}
+
+.box_image img:hover{
+	transform: scale(1,1.04);
+}
+
 .box h1{
 	font-size:30px;
 	margin:2% 0% 1% 3%;
@@ -1804,10 +1825,15 @@ samp{
     width: 46%;
 }
 
+.hotelimage img{
+	width:100%;
+	transform: scale(1,1);
+}
+
 .hotel_price p samp {
     font-size: 11px;
 }
-	
+
 .ticket_box {
     width: 46%;
 }
@@ -1819,6 +1845,15 @@ samp{
 
 .productsbox {
     margin: 5% 5% 3%;
+}
+
+.productsbox_image img{
+	width:100%;
+	transform: scale(1,1);
+}
+
+.productsbox_image img:hover{
+	transform: scale(1,1);
 }
 
 .productsbox_heading{
@@ -1872,11 +1907,6 @@ samp{
 
 
 /*CSS FOR VIDEO DEMONSTRATION PAGE*/
-
-.videodemonstration h1 {
-    font-size: 80px;
-	font-weight:600;
-}
 
 .anchor a {
 	font-size:90px;
